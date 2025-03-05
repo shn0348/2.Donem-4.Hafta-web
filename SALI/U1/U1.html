@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Parametleri Fonksiyonlar</title>
+    
+</head>
+<body>
+    <h1>Parametreli Fonksiyon İşlemleri</h1>
+    <button type="button" onclick="mesajGoster('Ahd MTAL')">Okul Adı</button>
+    <button type="button" onclick="mesajGoster('Web Tasarımı')">Ders Adı</button>
+    <button type="button" onclick="topla(3,5)">3+5</button>
+    <button type="button" onclick="topla(10,12)">10+12</button>
+    <button type="button" onclick="carp(3,4,5)">3*4*5</button>
+    <button type="button" onclick="carp(10,12,14)">10*12*14</button>
+    
+    <script>
+        function mesajGoster(mesaj)
+        {
+            alert("Bilgi : " + mesaj)
+        }
+
+        function topla(sayi1, sayi2)
+        {
+            var toplam= sayi1+sayi2;
+            alert("Toplam : " + toplam)
+        }
+
+        function carp(sayi1, sayi2,sayi3)
+        {
+            var carpim= sayi1*sayi2*sayi3;
+            alert("Toplam : " + carpim)
+        }
+    </script>
+    
+    
+</body>
+</html>

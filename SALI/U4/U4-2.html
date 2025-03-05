@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Parametresiz Basit Fonksiyonlar</title>
+    <style>
+       div{
+        margin-bottom: 5px;
+       }
+    </style>
+</head>
+<body>
+    
+    <div id="kutu1" style="width: 100px;height: 100px;background-color: blue;"></div>
+    <div id="kutu2" style="width: 100px;height: 100px;background-color: red;"> </div> 
+    <div id="kutu3" style="width: 100px;height: 100px;background-color: green;"> </div> 
+    <div id="kutu4" style="width: 100px;height: 100px;background-color: black;"> </div> 
+    <div id="kutu5" style="width: 100px;height: 100px;background-color: turquoise;"> </div> 
+    <button type="button" onclick="boyutlandir('kutu1')">Mavi</button> 
+    <button type="button" onclick="boyutlandir('kutu2')">kırmızı</button>  
+    <button type="button" onclick="boyutlandir('kutu3')">Yeşil</button> 
+    <button type="button" onclick="boyutlandir('kutu4')">Siyah</button> 
+    <button type="button" onclick="boyutlandir('kutu5')">Turkuaz</button> <br><br>
+    <button type="button" onclick="boyutlandirTumu()">Tümünü Değiştir</button>
+    
+    <script>
+        function boyutlandir(idDegeri){
+            document.getElementById(idDegeri).style.width="200px";
+            document.getElementById(idDegeri).style.height="200px";
+            document.getElementById(idDegeri).style.backgroundColor="yellow";
+        }   
+        function boyutlandirTumu(){
+            for(var i=0;i<5;i++){
+                document.getElementsByTagName("div")[i].style.width="200px";
+                document.getElementsByTagName("div")[i].style.height="200px";
+                document.getElementsByTagName("div")[i].style.backgroundColor="yellow";
+            }
+          
+        }     
+    </script>
+</body>
+</html>

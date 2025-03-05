@@ -1,0 +1,8 @@
+1- Sunum1 anlat.
+2- Parametreli fonksiyonları anlat.
+3- U1 yap
+4- U2 yap
+5- U3 yap
+6- U4 yaptır.
+7- U5 yap
+8- U6 yaptır.

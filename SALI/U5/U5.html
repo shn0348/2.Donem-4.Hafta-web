@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Parametresiz Basit Fonksiyonlar</title>
+    <style>
+        body{
+            background-color: gray; 
+            color:white; 
+            font-weight: bold;
+        }
+        #cerceve{
+            background-color: orange; 
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    
+</head>
+<body>    
+    <div id="cerceve"></div>
+    <form>
+        <input type="radio" name="secim" onClick="kenarYuvarla('0px')" > 0 piksel<br>
+        <input type="radio" name="secim" onClick="kenarYuvarla('10px')"> 10 piksel<br>
+        <input type="radio" name="secim" onClick="kenarYuvarla('25px')"> 25 piksel<br>
+        <input type="radio" name="secim" onClick="kenarYuvarla('50px')"> 50 piksel<br>
+    </form>
+    <script>
+        function kenarYuvarla(deger){
+            document.getElementById("cerceve").style.borderRadius=deger;
+        }
+    </script>
+</body>
+</html>

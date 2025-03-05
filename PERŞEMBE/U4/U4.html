@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İf else  Uygulaması </title>
+</head>
+<body>
+    <form action="" method="get">
+        Mail Adresi  <input type="text" id="mail">
+        <br><br>
+        <button type="button" onclick="girisKontrol()">Giriş Yap</button>
+    </form>
+ 
+    <h1 id="baslik">Kullanıcı Bilgilendirme</h1>
+    <p id="pKullaniciBilgi">Durum</p>
+    <script>
+        function girisKontrol()
+        {
+            var email = document.getElementById("mail").value;
+            if(email == "adminuser@gmail.com")
+            {
+                document.getElementById("baslik").innerText="Merhaba Admin";
+                document.getElementById("pKullaniciBilgi").innerText="Tüm hakları sahipsiniz.";
+            }
+            else
+            {
+                document.getElementById("baslik").innerText="Merhaba Standart Kullanıcı";
+                document.getElementById("pKullaniciBilgi").innerText="Kısıtlı hakları sahipsiniz.";
+            }
+        }
+       
+    </script>
+</body>
+</html>

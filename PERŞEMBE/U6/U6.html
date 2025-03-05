@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İf else  Uygulaması </title>
+</head>
+<body>
+    <h1>Ortalama Hesaplama</h1>
+    <form  method="get">
+        1. Sınav  <input type="text" id="s1"> <br><br>
+        2. Sınav  <input type="text" id="s2"> <br><br>
+        3. Sınav  <input type="text" id="s3"> <br><br>
+        4. Sınav  <input type="text" id="s4"> <br><br>
+        <button type="button" onclick="ortalamaHesapla()">HESAPLA</button>
+    </form>
+ 
+    <h1>Öğrenci Durumu</h1>
+    <p id="pDurum">Ortalama-Durum</p>
+    <script>
+        function ortalamaHesapla()
+        {
+           var not1 = Number(document.getElementById("s1").value);
+           var not2 = Number(document.getElementById("s2").value);
+           var not3 = Number(document.getElementById("s3").value);
+           var not4 = Number(document.getElementById("s4").value);
+           var toplam = not1 + not2 + not3 + not4;
+           var ortalama = toplam / 4;
+           if (ortalama>=70) 
+           {
+                document.getElementById("pDurum").innerText = ortalama + " ile geçtiniz";
+                document.getElementById("pDurum").style.color="green";
+           }
+           else
+           {
+                document.getElementById("pDurum").innerText = ortalama + " ile kaldınız";
+                document.getElementById("pDurum").style.color="red";
+           }
+        }
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Formlardan Yeri Alma Ve Yazdırma </title>
+    
+</head>
+<body>
+    <H1>İf - Else if yapısı - Ay Adı yazdırma Uygulaması</H1>
+    <form method="get">
+        Ay Sırası <input type="text" id="gunSirasi"> <br><br>
+        <button type="button" onclick="ayBul()">Ay Adı Bul</button>
+    </form>
+    <h3>Ay Adı (h3)</h3>
+    <p id="pGun">Ay Adını buraya yazdır(paragraf)</p>
+    <script>       
+        function ayBul(){
+            var gun = document.getElementById('gunSirasi').value;
+            if(gun==1)
+            {
+                document.getElementById("pGun").innerText="OCAK";
+            }
+            else if(gun==2)
+            {
+                document.getElementById("pGun").innerText="ŞUBAT";
+            }
+            else if(gun==3)
+            {
+                document.getElementById("pGun").innerText="MART";
+            }
+            else if(gun==4)
+            {
+                document.getElementById("pGun").innerText="NİSAN";
+            }
+            else if(gun==5)
+            {
+                document.getElementById("pGun").innerText="MAYIS";
+            }
+            else if(gun==6)
+            {
+                document.getElementById("pGun").innerText="HAZİRAN";
+            }
+            else if(gun==7)
+            {
+                document.getElementById("pGun").innerText="TEMMUZ";
+            }
+            else if(gun==8)
+            {
+                document.getElementById("pGun").innerText="AĞUSTOS";
+            }
+            else if(gun==9)
+            {
+                document.getElementById("pGun").innerText="EYLÜL";
+            }
+            else if(gun==10)
+            {
+                document.getElementById("pGun").innerText="EKİM";
+            }
+            else if(gun==11)
+            {
+                document.getElementById("pGun").innerText="KASIM";
+            }
+            else if(gun==12)
+            {
+                document.getElementById("pGun").innerText="ARALIK";
+            }
+            else
+            {
+                document.getElementById("gunSirasi").value="";
+                document.getElementById("pGun").innerText="Dikkatli ol-Yanlış ay yazdın..."
+                alert("Yanlış bir AY sırası girdiniz..");                
+            }
+        }      
+        
+    </script>
+    
+</body>
+</html>

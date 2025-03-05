@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Formlardan Yeri Alma Ve Yazdırma </title>
+    
+</head>
+<body>
+    <H1>İf - Else if yapısı</H1>
+    <form method="get">
+        Gün Sırası <input type="text" name="" id="gunSirasi"> <br><br>
+        <button type="button" onclick="gunBul()">Bul</button>
+    </form>
+    <h3>Gün Adı</h3>
+    <p id="pGun">Gün Adı buraya yazdır paragraf</p>
+    <script>       
+        function gunBul(){
+            var gun = document.getElementById('gunSirasi').value;
+            if(gun==1)
+            {
+                document.getElementById("pGun").innerText="Pazartesi";
+            }
+            else if(gun==2)
+            {
+                document.getElementById("pGun").innerText="Salı";
+            }
+            else if(gun==3)
+            {
+                document.getElementById("pGun").innerText="Çarşamba";
+            }
+            else if(gun==4)
+            {
+                document.getElementById("pGun").innerText="Perşembe";
+            }
+            else if(gun==5)
+            {
+                document.getElementById("pGun").innerText="Cuma";
+            }
+            else if(gun==6)
+            {
+                document.getElementById("pGun").innerText="Cumartesi";
+            }
+            else if(gun==7)
+            {
+                document.getElementById("pGun").innerText="Pazar";
+            }
+            else
+            {
+                document.getElementById("gunSirasi").value="";
+                document.getElementById("pGun").innerText="Dikkat Yanlış Gün....."
+                alert("Yanlış bir sırası girdiniz..");                
+            }
+        }      
+        
+    </script>
+    
+</body>
+</html>

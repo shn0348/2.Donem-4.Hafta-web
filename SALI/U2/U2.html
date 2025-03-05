@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Parametleri Fonksiyonlar</title>
+    
+</head>
+<body>
+    <h1>Parametreli Fonksiyon İşlemleri</h1>
+    <button type="button" onclick="mesajGoster('Ali ŞAHİN')">Ad-Soyad</button>
+    <button type="button" onclick="mesajGoster('Bilişim Teknolojileri')">Bölüm Adı</button>
+    <button type="button" onclick="cikar(10,5)">10-5</button>
+    <button type="button" onclick="cikar(20,10)">20-10</button>
+    <button type="button" onclick="carp(3,4,5,6)">3*4*5*6</button>
+    <button type="button" onclick="carp(10,12,14,16)">10*12*14*16</button>
+    
+    <script>
+        function mesajGoster(mesaj)
+        {
+            alert("Gönderilen Parametre Bilgisi : " + mesaj)
+        }
+
+        function cikar(sayi1, sayi2)
+        {
+            var fark= sayi1-sayi2;
+            alert("Fark Sonucu : " + fark)
+        }
+
+        function carp(sayi1, sayi2,sayi3,sayi4)
+        {
+            var carpim= sayi1*sayi2*sayi3*sayi4;
+            alert("Çarpım Sonucu : " + carpim)
+        }
+    </script>
+    
+    
+</body>
+</html>

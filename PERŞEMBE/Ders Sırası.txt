@@ -1,0 +1,15 @@
+1- Koşullar slaytını anlat
+2- U1 yap
+3- U2 yaptır.
+4- if-Else anlat.(resim)
+5- U3 yap.
+6- U4 yaptır.
+7- U5 yap
+8- U6 yaptır.
+9- if  else-if anlat(resim)
+10- U7 yap
+11- U8 yaptır.
+12- U9 yap-yaptır.
+
+
+

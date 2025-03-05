@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Formlardan Yeri Alma Ve Yazdırma </title>
+    
+</head>
+<body>
+    <H1>Form İşlemleri</H1>
+    <form method="get">
+        1. sayı <input type="text" id="sayi1"> <br><br>
+        2. sayı <input type="text" id="sayi2"> <br><br>
+        <input type="radio" name="islem" id="topla" checked> Toplama 
+        <input type="radio" name="islem" id="cikartma"> Çıkartma 
+        <input type="radio" name="islem" id="carpma"> Çarpma
+        <input type="radio" name="islem" id="bolme"> Bölme
+        <input type="radio" name="islem" id="kalan"> Kalan<br><br>
+        <button type="button" onclick="islemYap()">İşlem Yap</button>
+    </form>
+    <h3>İşlem Sonucu</h3>
+    <p id="pSonuc">İşlem sonucunu buraya yazdır paragraf</p>
+    <script>       
+        function islemYap(){
+            var s1 = document.getElementById('sayi1').value;
+            var s2 = document.getElementById('sayi2').value;
+            var sonuc=0;
+            if(document.getElementById('topla').checked)
+            {                
+                sonuc=Number(s1)+Number(s2);                
+            }
+            else if(document.getElementById('cikartma').checked)
+            {               
+                sonuc=Number(s1)-Number(s2);             
+            }
+            else if(document.getElementById('carpma').checked)
+            {                
+                sonuc=Number(s1)*Number(s2);                
+            }
+            else if(document.getElementById('bolme').checked)
+            {                
+                sonuc=Number(s1)/Number(s2);                
+            }
+            else if(document.getElementById('kalan').checked)
+            {                
+                sonuc=Number(s1)%Number(s2);                
+            }
+            document.getElementById('pSonuc').innerText=sonuc;
+        }      
+        
+    </script>
+    
+</body>
+</html>
